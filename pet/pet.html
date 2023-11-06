@@ -4,11 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      form {
+        display: table;
+      }
+
+      form div {
+        display: table-row;
+      }
+
+      label,
+      input {
+        display: table-cell;
+        margin-bottom: 10px;
+      }
+
+      label {
+        padding-right: 10px;
+      }
+    </style>
   </head>
   <body>
     <form>
-      <fieldset></fieldset>
+      <div>
+        <label for="petname">Enter your pet name:</label>
+        <input type="text" id="petname" required />
+      </div>
+      <div>
+        <label for="ownername">Enter owner name:</label>
+        <input type="text" id="ownername" required />
+      </div>
+      <div>
+        <label for="species">Enter species:</label>
+        <input type="text" id="species" />
+      </div>
+      <div>
+        <label for="breed">Enter breed:</label>
+        <input type="text" id="breed" />
+      </div>
+      <div>
+        <button type="button">Send</button>
+      </div>
     </form>
+    <div>
+      <ul id="list"></ul>
+    </div>
     <script src="/pet/pet.js"></script>
   </body>
 </html>

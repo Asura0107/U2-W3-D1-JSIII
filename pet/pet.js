@@ -4,9 +4,10 @@ const ownername = document.getElementById("ownername");
 const species = document.getElementById("species");
 const breed = document.getElementById("breed");
 const listul = document.getElementById("list");
+const form = document.getElementById("pet");
 
-btn.onclick = function () {
-  //   e.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
   const text = ownername.value;
   console.log(text);
@@ -29,4 +30,4 @@ btn.onclick = function () {
   petname.value = "";
   species.value = "";
   breed.value = "";
-};
+});
